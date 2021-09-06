@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<title>A Voice for the voiceless - AVVL</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../java/java.js">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body class="w3-black">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: cover;
+  background: size 90px; ;
+  background-image: url("../photo/avvl.jpg");
+  min-height: 75%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">AVVl</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+	  <a href="../html/blog.html" class="w3-bar-item w3-button"><i class="fa fa-event"></i>Events</a>
+      <a href="../html/contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contact Us</a>
+      <a href="https://forms.gle/Bq9K6P1dacnWCwkB6" class="w3-bar-item w3-button">Be A Member</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="./html/blog.html" onclick="w3_close()" class="w3-bar-item w3-button">Events</a>
+  <a href="./html/contact.html" onclick="w3_close()" class="w3-bar-item w3-button">Contact Us</a>
+  <a href="https://forms.gle/Bq9K6P1dacnWCwkB6" onclick="w3_close()" class="w3-bar-item w3-button">Be A Member</a>
+</nav>
+
+<div class="w3-display-container">
+    <img src="img_lights.jpg"  style="width:100%;height:400px">
+    <div class="w3-display-middle w3-large">
+      <h1 class="w3-jumbo w3-text-white w3-wide"><b>About Us</b></h1>
+    </div>
+     <div class="w3-display-bottomright w3-container">
+        <p class="w3-text-white w3-xlarge">Who we are?</p>
+     </div>
+  </div>
+  
+  <div class="w3-container w3-deep-orange w3-large w3-padding-16" style="margin-right:10%">
+    <p><span class="w3-xlarge"></span> A Voice For Voiceless(AVVL) is introduced to organize different ECA activities and providing</p>
+  </div>
+  <div class="w3-container w3-deep-purple w3-large w3-padding-16" style="margin-left:10%">
+    <p>best platform to show your talent through different online medium/physical medium and work for the rights of children,women and so on <span class="w3-xlarge">DEADLINE</span>.</p>
+  </div>
+  
+  <div style="width:50%">
+    <div class="w3-container w3-blue w3-large w3-padding-16">
+    <p><span class="w3-xlarge"></span> Contact Us:<br>
+    Email: avvl.pvt.ltd@gmail.com <br>
+    Facebook: A voice for the voice less. <br>
+    Youtube: AVVL</p>
+    </div>
+    <div class="w3-display-container">
+      <img src="img_london.jpg" style="width:100%">
+    </div>
+  </div>
+  
+
+
+
+  </div>
+  <p>Powered by <a href="https://www.winterdragon.me" title="Winter Dragon" target="_blank" class="w3-hover-text-green">Winter Dragon</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

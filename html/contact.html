@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<title>A Voice for the voiceless - AVVL</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../java/java.js">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: cover;
+  background: size 90px; ;
+  background-image: url("./photo/avvl.jpg");
+  min-height: 75%;
+}
+
+.w3-bar .w3-button {
+  padding: 10px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="../index.html" class="w3-bar-item w3-button w3-wide">Home</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="../index.html" class="w3-bar-item w3-button">Home</a>
+	  <a href="../html/blog.html" class="w3-bar-item w3-button">Events</a>
+      <a href="https://forms.gle/Bq9K6P1dacnWCwkB6" class="w3-bar-item w3-button">Be A Member</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+  <a href="./blog.html" onclick="w3_close()" class="w3-bar-item w3-button">Events</a>
+  <a href="https://forms.gle/Bq9K6P1dacnWCwkB6" onclick="w3_close()" class="w3-bar-item w3-button">Be A Member</a>
+</nav>
+
+
+</header>
+<section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+    <div class="container">
+      <form action="https://formspree.io/f/myyllgvn" method="POST" id="my-form">
+  
+        <div class="form-group">
+          <label for="firstName"> First Name</label>
+          <input type="text" id="firstName" name="firstName">
+        </div>
+  
+        <div class="form-group">
+          <label for="latsName">Last Name</label>
+          <input type="text" id="lastName" name="lastName">
+        </div>
+  
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+        </div>
+  
+        <div class="form-group">
+          <label for="massage">Massage</label>
+          <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+        </div>
+  
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div id="status"></div>
+  </section>
+  </html>
